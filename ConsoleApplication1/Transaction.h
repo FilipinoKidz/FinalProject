@@ -1,20 +1,21 @@
 #ifndef TRANSACTION
 #define TRANSACTION
 #include <string>
+#include "Time.h"
+#include "Location.h"
 using namespace std;
 class Transaction{
 	float amount;
-	string loc;
+	Location loc;
 	Time transtime;
-
-};
-
-class Time{
-	int month;
-	int day;
-	int year;
-	int hour;
-	int min;
+	int category;
+public:
+	Transaction();
+	void set_category(int);
+	void set_amount(float);
+	float get_amount();
+	Location get_loc();
+	Time get_time();
 };
 
 

@@ -78,9 +78,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Location.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Transaction.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Location.h" />
+    <ClInclude Include="Time.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="Transaction.h" />
   </ItemGroup>
