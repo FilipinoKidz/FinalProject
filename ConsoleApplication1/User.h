@@ -19,5 +19,5 @@ public:
 	Transaction *deletefrom(Transaction *);
 	double average(Transaction *);
 	double standard_dv(Transaction *);
-	bool dev_check(Transaction, Transaction *)
+	bool dev_check(Transaction, Transaction *);
 };
