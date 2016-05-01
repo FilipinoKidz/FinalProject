@@ -1,5 +1,6 @@
 #include<string>
-#include "Transaction.h"
+#include "List.h"
+
 using namespace std;
 class User{
 	string fname;
@@ -7,7 +8,7 @@ class User{
 	string username;
 	string password;
 	string card_num;
-	Transaction *list;
+	List *list;
 public:
 	User();
 	void set_fname();
@@ -15,9 +16,9 @@ public:
 	void set_username();
 	void set_password();
 	void assign_card_num();
-	Transaction *addto(Transaction *);
-	Transaction *deletefrom(Transaction *);
-	double average(Transaction *);
-	double standard_dv(Transaction *);
-	bool dev_check(Transaction, Transaction *);
+	List *addto(List *);
+	List *deletefrom(List *);
+	double average(List *);
+	double standard_dv(List *);
+	bool dev_check(Transaction, List *);
 };
