@@ -1,3 +1,7 @@
+#include <iostream>
+
+using namespace std;
+
 class Time{
 	int day;
 	int month;	
@@ -5,6 +9,8 @@ class Time{
 	int hour;
 	int min;
 public:
+	Time();
+	Time(int, int, int, int, int);
 	void set_day(int);
 	void set_month(int);
 	void set_year(int);
@@ -15,4 +21,6 @@ public:
 	int get_year();
 	int get_hour();
 	int get_min();
+	void print_t();
+	Time operator-(Time);
 };
